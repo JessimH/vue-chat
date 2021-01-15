@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    .notification{
+        padding: 10px;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #EEFEFB;
+        color: #79B2A4;
+        display: flex;
+        justify-content: center;
+    }
+    .chat{
+        position: absolute;
+        top:85px;
+        width: 100vw;
+        display: flex;
+        .users{
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow : 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
+            padding: 10px;
+            padding-right: 50px;
+            h4{
+                font-size: 0.9em;
+                font-weight: 300;
+                color: gray;
+                margin-bottom: 10px;
+            }
+            .user{
+                color: black;
+                margin-bottom: 5px;
+                font-weight: 500;
+                padding: 5px;
+                padding-right: 10px;
+                padding-left: 10px;
+                width: fit-content;
+                border-radius: 999px;
+                &:hover{
+                    cursor: pointer;
+                    background-color:rgba(61, 61, 61, 0.1);
+                }
+            }
+        }
+        .message{
+            width: 60%;
+            border-radius: 10px;
+            box-shadow : 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
+            height: fit-content;
+            padding: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            .message__messageDisplay{
+                display: flex;
+                flex-direction: column;
+                .message__info{
+                    display: flex;
+                    align-items: center;
+                    .time{
+                        font-size: 0.9em;
+                        margin-left: 7px;
+                        color: gray;
+                    }
+                }
+                .message__first{
+                    margin-top: 10px;
+                    width: fit-content;
+                    padding: 7px;
+                    border-radius: 999px;
+                    color: black;
+                    background-color:#E9E9EB;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    .timestamp{
+                        margin-left: 7px;
+                        color: white;
+                        font-size: 0.7em;
+                    }
+                }
+                .message__content{
+                    align-self: flex-end;
+                    margin-top: 10px;
+                    width: fit-content;
+                    padding: 7px;
+                    border-radius: 999px;
+                    color: white;
+                    background-color:#1781F4;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    .timestamp{
+                        margin-left: 7px;
+                        color: white;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+            .message__input{
+                margin: auto;
+                margin-top: 10px;
+                border-top: 1px solid lightgray;
+                padding-top: 10px;
+                input{
+                    width: 80%;
+                    outline: none;
+                    padding: 5px;
+                    border: none;
+                }
+                button{
+                    color: white;
+                    background-color: blue;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 999px;
+                    outline: none;
+                    transition: 0.2s ease;
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        background-color: rgb(0, 173, 92);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

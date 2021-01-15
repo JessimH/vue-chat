@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .notification {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #EEFEFB;
+  color: #79B2A4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .chat {
+  position: absolute;
+  top: 85px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .chat .users {
+  margin-left: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
+          box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
+  padding: 10px;
+  padding-right: 50px;
+}
+
+body .chat .users h4 {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+body .chat .users .user {
+  color: black;
+  margin-bottom: 5px;
+  font-weight: 500;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 999px;
+}
+
+body .chat .users .user:hover {
+  cursor: pointer;
+  background-color: rgba(61, 61, 61, 0.1);
+}
+
+body .chat .message {
+  width: 60%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
+          box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body .chat .message .message__messageDisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .chat .message .message__messageDisplay .message__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .chat .message .message__messageDisplay .message__info .time {
+  font-size: 0.9em;
+  margin-left: 7px;
+  color: gray;
+}
+
+body .chat .message .message__messageDisplay .message__first {
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px;
+  border-radius: 999px;
+  color: black;
+  background-color: #E9E9EB;
+  font-weight: 300;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .chat .message .message__messageDisplay .message__first .timestamp {
+  margin-left: 7px;
+  color: white;
+  font-size: 0.7em;
+}
+
+body .chat .message .message__messageDisplay .message__content {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px;
+  border-radius: 999px;
+  color: white;
+  background-color: #1781F4;
+  font-weight: 300;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .chat .message .message__messageDisplay .message__content .timestamp {
+  margin-left: 7px;
+  color: white;
+  font-size: 0.7em;
+}
+
+body .chat .message .message__input {
+  margin: auto;
+  margin-top: 10px;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+}
+
+body .chat .message .message__input input {
+  width: 80%;
+  outline: none;
+  padding: 5px;
+  border: none;
+}
+
+body .chat .message .message__input button {
+  color: white;
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  border-radius: 999px;
+  outline: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+body .chat .message .message__input button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #00ad5c;
+}
+/*# sourceMappingURL=Style.css.map */
