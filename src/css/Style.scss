@@ -32,11 +32,16 @@ body{
             box-shadow : 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
             padding: 10px;
             padding-right: 50px;
+            height: 82vh;
+            overflow: scroll;
+            width: 15vw;
             h4{
+                width: 100;
                 font-size: 0.9em;
                 font-weight: 300;
                 color: gray;
                 margin-bottom: 10px;
+                background-color: white;
             }
             .user{
                 color: black;
@@ -57,13 +62,15 @@ body{
             width: 60%;
             border-radius: 10px;
             box-shadow : 0px 6px 10px -3px rgba(0, 0, 0, 0.192);
-            height: fit-content;
+            height: 80vh;
             padding: 20px;
             margin-left: 20px;
             margin-right: 20px;
             .message__messageDisplay{
                 display: flex;
                 flex-direction: column;
+                height: 92%;
+                overflow: scroll;
                 .message__info{
                     display: flex;
                     align-items: center;

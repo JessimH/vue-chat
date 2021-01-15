@@ -26,9 +26,10 @@ const Users = {
     template: `
         <div class='users'>
             <h4>Utilisateurs connecté</h4>
-            <div v-for="user in users">
+            <div style="margin-top: 30px">
                 <User
                     :user="user"
+                    v-for="user in users"
                 />
             </div>
         </div>
